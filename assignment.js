@@ -20,13 +20,14 @@ fah(100)
 
 function checkentry(age, isvip) {
     if (isvip === true) {
-        return "access granted: Welcome VIP! "
+        return "access granted: Welcome VIP! immediately "
     }
 
     if (age < 21) {
         return "access denied: Too young!"
     }   
-
+    if (isvip === true && age > 21){
     return "access granted: Enjoy the night!"
+}
 }
 console.log(checkentry(18, false))
